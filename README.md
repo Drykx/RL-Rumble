@@ -1,4 +1,4 @@
-# 🧠 RL-Rumble
+#  🤖 RL-Rumble
 
 A personal project to implement and benchmark three foundational reinforcement learning algorithms from scratch:
 
