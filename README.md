@@ -1,9 +1,9 @@
 # Reinforcement Learning Rumble
 
 In this repository, we implement various reinforcement learning algorithms from scratch including:
-- Proximal Policy Optimization (PPO)
-- Soft Actor-Critic (SAC)
-- Variational Free Energy (VFE)
+- **Proximal Policy Optimization (PPO)**
+- **Soft Actor-Critic (SAC)**
+- **Variational Free Energy (VFE)**
 
 #### Goals
 
@@ -13,23 +13,26 @@ In this repository, we implement various reinforcement learning algorithms from 
 
 ## Table of Contents
 
-- [Introduction to Reinforcement Learning](#introduction-to-reinforcement-learning)
-  - [What is Reinforcement Learning?](#what-is-reinforcement-learning)
-  - [How to implement it in code?](#how-to-implement-it-in-code)
-- [PPO](#ppo)
-  - [What is PPO?](#what-is-ppo)
-  - [How do you connect theory to code?](#how-do-you-connect-theory-to-code)
-  - [What are the optimization tricks?](#what-are-the-optimization-tricks)
+- [Reinforcement Learning Rumble](#reinforcement-learning-rumble)
+      - [Goals](#goals)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction to Reinforcement Learning](#introduction-to-reinforcement-learning)
+      - [What is Reinforcement Learning?](#what-is-reinforcement-learning)
+      - [How to implement it in code?](#how-to-implement-it-in-code)
+  - [PPO](#ppo)
+      - [What is PPO?](#what-is-ppo)
+      - [How do you connect theory to code?](#how-do-you-connect-theory-to-code)
+      - [What are the optimization tricks?](#what-are-the-optimization-tricks)
 
 ## Introduction to Reinforcement Learning
 
-#### What is Reinforcement Learning?
+### What is Reinforcement Learning?
 
-#### How to implement it in code?
+### How to implement it in code?
 
 ## PPO
 
-#### What is PPO?
+### What is PPO?
 
 The actor loss is:
 
@@ -55,12 +58,19 @@ $$
 \mathcal{H} = \frac{d}{2} \left( \ln(2\pi e) + \frac{1}{d} \sum_{i=1}^d \ln \sigma_i^2 \right)
 $$
 
-#### How do you connect theory to code?
+### How do you connect theory to code?
 
 1. When defining the advantage function, fix the value of the value function at the beginning of each episode to avoid unstable moving average computation.
 2. Normalize the advantage function to have zero mean and unit variance.
 
-#### What are the optimization tricks?
+### What are the optimization tricks?
+
+**Current performace:** 
+![PPO Losses](img/PPO_losses_05.06.2025.png)
+
+**Improvement steps:** 
+
+#### Tricks
 
 - Learning rate annealing
 - Mini batch update
